@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Contactos</title>
+    </head>
+    <body>
+        <h1>Contacts</h1>
+        <table id="contacts-table">
+            <tr id="contacts-head">
+                <th>ID</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </table>
+
+        <form id="contacts-form">
+            <div class="item text">
+                <label>Nombres:</label>
+                <div class="field"><input type="text" name="first_name" /></div>
+            </div>
+            <div class="item text">
+                <label>Apellidos:</label>
+                <div class="field"><input type="text" name="last_name" /></div>
+            </div>
+            <div class="item text">
+                <label>Dirección:</label>
+                <div class="field"><input type="text" name="address" /></div>
+            </div>
+            <div class="item text">
+                <label>Teléfono:</label>
+                <div class="field"><input type="text" name="phone" /></div>
+            </div>
+            <div class="item text">
+                <label>Email:</label>
+                <div class="field"><input type="text" name="email" /></div>
+            </div>
+            <div class="button-wrapper">
+                <div class="item button">
+                    <div class="field"><input type="button" id="contacts-op-limpiar" value="Limpiar" /></div>
+                </div>
+                <div class="item button button-default">
+                    <div class="field"><input type="submit" id="contacts-op-guardar" value="Guardar" /></div>
+                </div>
+            </div>
+            <input type="hidden" name="id_entry" value="0" />
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>
